@@ -4,14 +4,18 @@ public class Main {
     public static void main(String[] args) {
 
         Scanner scanner = new Scanner(System.in);
+        System.out.print("Введите логин: ");
         String login = scanner.nextLine();
-        CheckLogin.checker(login);
+        System.out.println("\nВведите пароль: ");
         String password = scanner.nextLine();
-        CheckPassword.checker(password);
+        System.out.println("\nВведите подтверждение пароля: ");
         String confPassword = scanner.nextLine();
-        CheckСonfirmationPassword.checkСonfirmationPassword(password, confPassword);
         scanner.close();
-        System.out.println("Введенные данные корректны");
+        boolean checking = Validator.validator(login, password, confPassword);
+//        boolean checking = Validator.validator("!1", "qwerty123", "qwerty123");
+        if (checking) {
+            System.out.println("Введенные данные корректны.");
+        }
 
     }
 
