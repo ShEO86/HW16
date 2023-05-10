@@ -2,9 +2,9 @@ public class CheckPassword {
 
     public static void checker(String pass) {
         if (passLenghtChecker(pass) && passSimbolChecker(pass)) {
-            System.out.println("Password is correct");
+            System.out.println("Password is correct.");
         } else {
-            throw new WrongPasswordException("Incorrect password");
+            throw new WrongPasswordException("Incorrect password.");
         }
     }
 

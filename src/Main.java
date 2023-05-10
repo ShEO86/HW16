@@ -11,7 +11,7 @@ public class Main {
         String confPassword = scanner.nextLine();
         CheckСonfirmationPassword.checkСonfirmationPassword(password, confPassword);
         scanner.close();
-        System.out.println("Введенные данные корректны");
+        System.out.println("Введенные данные корректны.");
 
     }
 

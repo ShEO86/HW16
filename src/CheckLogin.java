@@ -1,9 +1,9 @@
 public class CheckLogin {
     public static void checker(String login) {
         if (lenghtChecker(login) && simbolChecker(login)) {
-            System.out.println("Login is correct");
+            System.out.println("Login is correct.");
         } else {
-            throw new WrongLoginException("Incorrect login");
+            throw new WrongLoginException("Incorrect login.");
         }
 
     }
